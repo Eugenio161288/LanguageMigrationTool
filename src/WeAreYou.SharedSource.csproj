@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{666EFEDF-18C3-4A1C-88FF-03F8A9AAA2C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verndale.SharedSource</RootNamespace>
+    <AssemblyName>WeAreYou.SharedSource</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="scSearchContrib.Searcher, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>references\scSearchContrib.Searcher.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>references\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.SharedSource.PartialLanguageFallback">
+      <HintPath>references\Sitecore.SharedSource.PartialLanguageFallback.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\LanguageHelper.cs" />
+    <Compile Include="Helpers\SearchHelper.cs" />
+    <Compile Include="Helpers\SitecoreHelper.cs" />
+    <Compile Include="LanguageMigration.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LanguageMigration.aspx.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SitecoreCommands\CreateVersionInAllLanguages.cs" />
+    <Compile Include="SitecoreProcessors\CreateVersionInAllLanguagesOnCreate.cs" />
+    <Compile Include="SitecoreProcessors\CultureResolver.cs" />
+    <Compile Include="SitecoreProcessors\ItemLanguageValidation.cs" />
+    <Compile Include="SitecoreProcessors\RegionValidationModule.cs" />
+    <Compile Include="SitecoreProcessors\TryGetFromFallbackLanguage.cs" />
+    <Compile Include="SitecoreProviders\CustomLinkProvider.cs" />
+    <Compile Include="SitecoreProviders\CustomMediaProvider.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
