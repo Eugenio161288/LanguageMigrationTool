@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Verndale.SharedSource")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("WeAreYou.LanguageMigrationTool")]
+[assembly: AssemblyDescription("Updated Language Migration Tool for Sitecore 9.0")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("We Are You B.V.")]
-[assembly: AssemblyProduct("WeAreYou.SharedSource")]
+[assembly: AssemblyProduct("WeAreYou.LanguageMigrationTool")]
 [assembly: AssemblyCopyright("Copyright © We Are You B.V. 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
