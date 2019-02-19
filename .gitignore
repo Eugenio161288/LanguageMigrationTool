@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/bin/Debug
+/src/obj
+/src/Helpers/LanguageHelper.cs
+/src/.vs/WeAreYou.SharedSource/v15/.suo
+/src/.vs/WeAreYou.SharedSource/v15/Server/sqlite3
+/src/bin/Release
