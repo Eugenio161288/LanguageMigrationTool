@@ -2,10 +2,11 @@
 <package >
   <metadata>
     <id>WeAreYou.LanguageMigrationTool</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 	<title>Language Migration Tool for Sitecore 9.0</title>
     <authors>evgeniy.rotar</authors>
     <owners>WeAreYou</owners>
+	<projectUrl>https://github.com/Eugenio161288/LanguageMigrationTool</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Language Migration Tool for Sitecore 9.0 and .Net Framework 4.6.2</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
