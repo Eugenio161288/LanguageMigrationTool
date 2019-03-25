@@ -11,7 +11,7 @@
     <description>Language Migration Tool for Sitecore 9.0 and .Net Framework 4.6.2</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>Sitecore LanguageMigration</tags>
+    <tags>Sitecore LanguageMigrationTool</tags>
     <references>
 		<reference file="WeAreYou.LanguageMigrationTool.dll" />
 	</references>
