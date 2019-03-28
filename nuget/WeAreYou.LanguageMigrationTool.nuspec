@@ -19,8 +19,8 @@
 	</contentFiles>
   </metadata>
   <files>
-		<file src="..\modules\**" target="contentFiles" />
-		<file src="..\modules\**" target="content" />
+		<file src="..\src\modules\**" target="contentFiles" />
+		<file src="..\src\modules\**" target="content" />
 		<file src="..\src\bin\Debug\WeAreYou.LanguageMigrationTool.dll" target="lib" />
     </files>
 </package>
